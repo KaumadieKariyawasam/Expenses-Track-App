@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.vue.demo.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,15 +8,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Entity
-@Table(name="student")
+@Table(name = "student")
 public class Student {
     @Id
     private Long Id;
     private String name;
-    private String email;
 }
