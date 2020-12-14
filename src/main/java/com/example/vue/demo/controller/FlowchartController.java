@@ -45,8 +45,8 @@ public class FlowchartController {
     @PostMapping("/savechart")
     ResponseEntity<Flowchart> savechart(@Validated @RequestBody Flowchart flowchart)throws URISyntaxException{
 
-        Flowchart rslt=flowchartRepository.save(flowchart);
-        return ResponseEntity.created(new URI("/flowchart/savechart"+rslt.getId())).body(rslt);
+        Flowchart result=flowchartRepository.save(flowchart);
+        return ResponseEntity.created(new URI("/flowchart/savechart"+result.getId())).body(rslt);
     }
    
 
