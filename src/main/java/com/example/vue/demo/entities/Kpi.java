@@ -1,5 +1,6 @@
 package com.example.vue.demo.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -15,9 +16,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Kpi {
     @Id
-     
-    private Long id;
+    @Column(length = 255)
+  
     private String name;
-   
+
     private String kpistring;
 }
